@@ -14,8 +14,10 @@ app.get('/', (req, res) => {
 })
 
 app.post("/login", (req, res) => {
+  // hard coded
   const USERNAME = "nk";
   const PASSWORD = "8888";
+
   const { username, password } = req.body;
 
   if (username === USERNAME && password === PASSWORD) {
@@ -27,6 +29,7 @@ app.post("/login", (req, res) => {
     console.log("JWT_KEY:", process.env.JWT_KEY);
 
     const token = jwt.sign(user, process.env.JWT_KEY);
+    // send response
     res.json({
       token,
       user,

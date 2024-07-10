@@ -34,6 +34,7 @@ import { useRouter } from 'vue-router';
       password: password.value,
     }),
   });
+  console.log("resp:",response);
   
   const { user, token } = await response.json();
   store.commit('setUser', user);
