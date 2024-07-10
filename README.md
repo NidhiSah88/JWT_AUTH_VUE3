@@ -3,7 +3,15 @@
 ## Project setup
 ```
 npm install
+
 ```
+Implementing Authentication on Vue.js using JWTtoken
+# npm install cors dotenv express
+# npm install jsonwebtoken
+
+# to run app: npm run serve
+# to run server: node server.js
+refernce: https://www.loginradius.com/blog/engineering/implementing-authentication-on-vuejs-using-jwt/
 
 ### Compiles and hot-reloads for development
 ```
